@@ -1,0 +1,41 @@
+.container {
+  box-shadow: 5px 5px 4px 5px hsl(229, 8%, 60%);
+  border-radius: 15px;
+  margin: 15px;
+  padding: 10px;
+}
+
+h1 {
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+}
+
+p {
+  color: hsl(229, 8%, 60%);
+  font-weight: 400;
+  margin: auto;
+  width: 50%;
+}
+
+.mat-button {
+  background-color: hsl(231, 69%, 60%);
+  border: solid 3px hsl(231, 69%, 60%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Rubik";
+  font-weight: 500;
+  margin: 10px 0;
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 69%, 60%);
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
+.background {
+  background-image: url("../../assets/bg-dots.svg");
+  height: 4px;
+  margin: 10px 0;
+  width: 100%
+}

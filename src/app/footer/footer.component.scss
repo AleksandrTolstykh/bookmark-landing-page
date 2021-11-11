@@ -1,0 +1,37 @@
+section {
+  background-color: hsl(229, 31%, 21%);
+  padding: 15px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.mat-button {
+  color: hsl(0, 0%, 100%);
+  font-family: "Rubik";
+  font-weight: 400;
+  &:hover {
+    color: hsl(0, 94%, 66%);
+  }
+}
+
+svg {
+  margin: 30px 5px;
+  &:hover {
+    cursor: pointer;
+    path {
+      fill: hsl(0, 94%, 66%);
+    }
+  }
+}

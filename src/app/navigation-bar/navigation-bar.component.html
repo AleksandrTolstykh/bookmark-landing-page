@@ -1,0 +1,19 @@
+<section>
+  <mat-toolbar *ngIf="!mobile">
+    <img src="assets/logo-bookmark.svg" alt="logo" />
+    <div>
+      <button mat-button>FEATURES</button>
+      <button mat-button>PRICING</button>
+      <button mat-button>CONTACT</button>
+      <button mat-button class="login-button">LOGIN</button>
+    </div>
+  </mat-toolbar>
+  <mat-toolbar *ngIf="mobile" [ngClass]="{'opened-menu': showMenu}">
+    <img src="assets/logo-bookmark.svg" alt="logo" />
+    <button mat-button (click)="onClick($event)">
+      <img *ngIf="!showMenu" src="assets/icon-hamburger.svg" alt="hamburger" />
+      <img *ngIf="showMenu" src="assets/icon-close.svg" alt="close" />
+    </button>
+  </mat-toolbar>
+  <app-mobile-menu *ngIf="mobile && showMenu"></app-mobile-menu>
+</section>

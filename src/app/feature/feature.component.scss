@@ -1,0 +1,52 @@
+.container {
+  align-items: center;
+  display: flex;
+  font-family: "Rubik";
+  margin: 70px 0;
+  div {
+    margin-left: 50px;
+    text-align: left;
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.image {
+  @media screen and (max-width: 768px) {
+    img {
+      width: 90%;
+    }
+  }
+}
+
+h1 {
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+}
+
+p {
+  color: hsl(229, 8%, 60%);
+  font-weight: 400;
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    width: 70%;
+  }
+}
+
+.mat-button {
+  background-color: hsl(231, 69%, 60%);
+  border: solid 3px hsl(231, 69%, 60%);
+  color: hsl(0, 0%, 100%);
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 69%, 60%);
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+}

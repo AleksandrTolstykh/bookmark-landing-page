@@ -1,0 +1,16 @@
+::ng-deep {
+  .mat-expansion-panel-header-title {
+    color: hsl(229, 31%, 21%)!important;
+    font-family: "Rubik"!important;
+    font-weight: 400!important;
+    &:hover {
+      color: hsl(0, 94%, 66%)!important;
+    }
+  }
+
+  .mat-expansion-panel-body {
+    color: hsl(229, 8%, 60%)!important;
+    font-family: "Rubik"!important;
+    font-weight: 400!important;
+  }
+}

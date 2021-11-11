@@ -1,0 +1,86 @@
+section {
+  background-image: url("../../assets/illustration-hero.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (max-width: 768px) {
+    background-image: url("../../assets/illustration-hero.svg");
+    background-position: top center;
+  }
+}
+
+.container {
+  height: 450px;
+  margin: auto;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding-top: 400px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+h1 {
+  color: hsl(229, 31%, 21%);
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 50px;
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+p {
+  color: hsl(229, 8%, 60%);
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+.mat-button {
+  border-radius: 5px;
+  font-family: "Rubik";
+  font-weight: 500;
+  margin: auto 10px;
+}
+
+.chrome-button {
+  background-color: hsl(231, 69%, 60%);
+  border: solid 3px hsl(231, 69%, 60%);
+  color: hsl(0, 0%, 100%);
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 69%, 60%);
+  }
+}
+
+.firefox-button {
+  background-color: hsl(229, 8%, 60%, 50%);
+  border: solid 3px hsl(229, 8%, 60%, 50%);
+  color: hsl(229, 31%, 21%);
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(229, 8%, 60%);
+  }
+}
+
+.background {
+  background-color: hsl(231, 69%, 60%);
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  top: 200px;
+  width: 400px;
+  z-index: -1;
+}

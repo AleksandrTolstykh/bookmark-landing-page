@@ -1,0 +1,14 @@
+<section>
+  <div class="container">
+    <h1>Download the extension</h1>
+    <p>
+      We’ve got more browsers in the pipeline. Please do let us know if you’ve
+      got a favourite you’d like us to prioritize.
+    </p>
+    <mat-grid-list [cols]="columns" [rowHeight]="columns === 1 ? '1.5:1' : '1:1'">
+      <mat-grid-tile *ngFor="let extension of extensions; let i = index" [class]="'tile-' + (i + 1)">
+        <app-extension [image]="extension.image" [header]="extension.header" [version]="extension.version"></app-extension>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</section>

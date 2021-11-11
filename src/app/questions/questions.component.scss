@@ -1,0 +1,38 @@
+.container {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+h1 {
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+  margin: auto;
+  width: 50%;
+}
+
+p {
+  color: hsl(229, 8%, 60%);
+  font-weight: 400;
+  margin: auto;
+  width: 50%;
+}
+
+.mat-button {
+  background-color: hsl(231, 69%, 60%);
+  border: solid 3px hsl(231, 69%, 60%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Rubik";
+  font-weight: 500;
+  margin: 10px auto;
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 69%, 60%);
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+}

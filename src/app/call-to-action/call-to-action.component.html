@@ -1,0 +1,20 @@
+<section>
+  <div class="container">
+    <p>35,000+ ALREADY JOINED</p>
+    <h1>Stay up-to-date with what we’re doing</h1>
+    <form>
+      <mat-form-field appearance="fill">
+        <div>
+          <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Enter your email address">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Whoops, make sure it's an email
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Whoops, make sure it's an email
+          </mat-error>
+        </div>
+      </mat-form-field>
+      <button mat-button>Contact Us</button>
+    </form>
+  </div>
+</section>

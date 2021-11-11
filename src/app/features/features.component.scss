@@ -1,0 +1,57 @@
+.container {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+h1 {
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+}
+
+p {
+  color: hsl(229, 8%, 60%);
+  font-weight: 400;
+  margin: auto;
+  width: 50%;
+}
+
+::ng-deep {
+  .mat-tab-label-content {
+    color: hsl(229, 31%, 21%);
+    font-family: "Rubik";
+    font-weight: 500;
+    &:hover {
+      color: hsl(0, 94%, 66%);
+    }
+  }
+
+  .mat-tab-labels {
+    justify-content: center;
+    @media screen  and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: hsl(0, 94%, 66%);
+  }
+}
+
+.background {
+  background-color: hsl(231, 69%, 60%);
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  top: 850px;
+  width: 400px;
+  z-index: -1;
+  @media screen and (max-width: 768px) {
+    top: 1150px;
+  }
+}

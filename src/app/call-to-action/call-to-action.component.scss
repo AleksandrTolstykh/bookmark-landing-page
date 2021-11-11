@@ -1,0 +1,67 @@
+section {
+  background-color: hsl(231, 69%, 60%);
+  padding: 15px;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.mat-form-field-infix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+input {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  font-weight: "Rubik";
+  font-weight: 500;
+  padding: 15px;
+  width: 100%;
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+.mat-button {
+  background-color: hsl(0, 94%, 66%);
+  border: solid 3px hsl(0, 94%, 66%);
+  bottom: 15px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Rubik";
+  font-weight: 500;
+  left: 30px;
+  position: relative;
+  width: 30%;
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 94%, 66%);
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+    width: 60%
+  }
+}

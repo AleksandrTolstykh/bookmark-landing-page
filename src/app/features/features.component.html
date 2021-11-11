@@ -1,0 +1,17 @@
+<section>
+  <div class="container">
+    <h1>Features</h1>
+    <p>
+      Our aim is to make it quick and easy for you to access your favourite websites.
+      Your bookmarks sync between your devices so you can access them on the go.
+    </p>
+    <mat-tab-group>
+      <div *ngFor="let feature of features">
+        <mat-tab [label]="feature.label">
+          <app-feature [image]="feature.image" [header]="feature.header" [text]="feature.text"></app-feature>
+        </mat-tab>
+      </div>
+    </mat-tab-group>
+  </div>
+  <div class="background"></div>
+</section>

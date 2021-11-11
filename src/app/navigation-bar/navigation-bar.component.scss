@@ -1,0 +1,41 @@
+.mat-toolbar {
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.opened-menu {
+  background-color: hsl(229, 31%, 21%, 75%);
+}
+
+div {
+  .mat-button {
+    color: hsl(229, 31%, 21%);
+    font-family: "Rubik";
+    font-weight: 400;
+    &:hover {
+      color: hsl(0, 94%, 66%);
+    }
+  }
+  .login-button {
+    background-color: hsl(0, 94%, 66%);
+    border: solid 3px hsl(0, 94%, 66%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    &:hover {
+      background-color: hsl(0, 0%, 100%);
+      color: hsl(0, 94%, 66%);
+    }
+  }
+}
+
+::ng-deep {
+  .mat-button-focus-overlay {
+    background-color: transparent;
+  }
+}
